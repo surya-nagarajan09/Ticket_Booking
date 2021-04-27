@@ -101,7 +101,7 @@
           <Typography gutterBottom variant="h5" component="h2">Cast: {book.actors}</Typography>
           <Typography gutterBottom variant="h5" component="h2">Director: {book.director}</Typography>
           <Typography gutterBottom variant="h5" component="h2">MusicDirector: {book.musicdirector}</Typography>    
-          <Typography gutterBottom variant="body2" component="h2">MusicDirector: {book.synopsis}</Typography>
+          <Typography gutterBottom variant="body2" component="h2">About: {book.synopsis}</Typography>
         </CardContent>
       </CardActionArea>
     </Card>
