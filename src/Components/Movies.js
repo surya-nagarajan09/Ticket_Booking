@@ -15,8 +15,7 @@ const Movie=()=>{
             <Button  variant="contained" color="primary" onClick={()=>setComponent(<Current/>)}>Now Showing</Button>
             <Button  variant="contained" color="secondary" onClick={()=>setComponent(<Upcoming/>)}>upComing</Button>
             </ButtonGroup>
-            </div>
-           
+            </div>   
             <div>
                 {component}
             </div>

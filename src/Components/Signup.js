@@ -73,7 +73,7 @@ const SignUp=()=> {
       }
     })
   }else{
-    setSignUpMessage(`please fill all fileds `)
+    setSignUpMessage(`please fill all fileds password length greater than 8 `)
   }
 
     }
@@ -94,7 +94,7 @@ const SignUp=()=> {
                 <TextField id="standard-basic" label="Password"  type="password" onChange={(e)=>setSignUp({...signUp,password:e.target.value})}/>
                 <div className={button.root}>
                  <Button variant="contained" type="submit" color="primary">Signup</Button>
-                 <Typography component="h4" variant="h4">{signUpMessage}</Typography>
+                 <Typography component="h6" variant="h6">{signUpMessage}</Typography>
                 </div>
            </form>
           </Grid>

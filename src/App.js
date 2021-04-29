@@ -18,7 +18,7 @@ function App() {
   var  logged=false;
   logged=sessionStorage.getItem("logged");
 
-  console.log(logged)
+
 
  
 

@@ -61,7 +61,7 @@ const Login=()=> {
     e.preventDefault();
     setLoginMessage(<CircularProgress color="secondary" />)
     const logindata=login;
-    if((logindata.email!=="")&&(logindata.password!=="")){
+    if((logindata.email !=="")&&(logindata.password!=="")){
       axios.post("https://authenticate-commerce.herokuapp.com/login",logindata)
      .then((res)=>{
        if(res.status===200)
@@ -80,9 +80,6 @@ const Login=()=> {
      
 
   }
- 
-
-
 
   return (
     <div className={classes.root}>
@@ -102,7 +99,7 @@ const Login=()=> {
              <div className={classes.details}>
                <CardContent className={classes.content}>
                  <Typography component="h6" variant="h6">
-                   Dont have accont ?  <Link href="/signup">signup <Typography component="h4" variant="h4">{loginMesage}</Typography></Link> 
+                   Dont have accont ?  <Link href="/signup">signup <Typography component="h6" variant="h6">{loginMesage}</Typography></Link> 
                   
                    </Typography>
                    
